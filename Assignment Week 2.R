@@ -31,9 +31,9 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   return(mean(data[,pollutant], na.rm = T))
 }
 
-##Part 1 (solution 2)
 pollutantmean("specdata", "sulfate", 1:10)
 
+##Part 1 (solution 2)
 pollutantmean <- function(directory, pollutant, id = 1:332) {
   
   directory <- paste(getwd(), "/", directory, "/", sep="")
