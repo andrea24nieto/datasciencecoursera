@@ -1,3 +1,4 @@
+##Part 1 (solution 1)
 pollutantmean <- function(directory, pollutant, id = 1:332) {
   
   #path <- file.path(getwd(),directory)
@@ -30,7 +31,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   return(mean(data[,pollutant], na.rm = T))
 }
 
-
+##Part 1 (solution 2)
 pollutantmean("specdata", "sulfate", 1:10)
 
 pollutantmean <- function(directory, pollutant, id = 1:332) {
@@ -50,7 +51,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   mean(data[[pollutant]],na.rm=TRUE)
 }
 
-
+##Part 2
 complete <- function(directory, id = 1:332) {
   path <- paste0(getwd(),"/", directory)
   data <- data.frame()
@@ -81,7 +82,7 @@ complete <- function(directory, id = 1:332) {
   return(data)
 }
   
-
+##Part 3
 corr <- function(directory,threshold = 0) {
   
   path <- paste0(getwd(),"/",directory)
